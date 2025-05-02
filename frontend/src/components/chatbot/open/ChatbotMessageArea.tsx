@@ -18,7 +18,7 @@ export default function ChatbotMessageArea(props: ChatbotMessageAreaProps) {
 
 
     return (
-        <div className="flex-grow overflow-y-auto bg-zinc-700 sm:border-t sm:border-b sm:border-slate-600 ">
+        <div className="flex-grow overflow-y-auto bg-zinc-700 border-t border-b border-slate-600 ">
             <div className="pt-3">
                 <DefaultSupportMessage propKey={0}/>
 
