@@ -55,3 +55,8 @@ There are additional considerations to be weary of before using in any productio
 4. Add obfuscation to the frontend. It is easy to do by adding `javascript-obfuscator` and configuring it in `package.json`.
 5. Disable generation of sourcemaps on the frontend. It can be done by putting `GENERATE_SOURCEMAP=false` in the `.env` file.
 6. Place the backend behind either a API Gateway to secure it or add something like Spring Security to the backend. 
+
+#### Customer Support Guidance Document Template
+This document is the primary source of information for the model to go off of. To have the most accurate responses, add necessary information to this document.  
+The format of the document is up to you, but the default is markdown.  Add any additional websites you want the chatbot to use. It is not permitted to search the web outside of the specified websites and information in this document and customize the response templates as needed.  
+
