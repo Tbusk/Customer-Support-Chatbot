@@ -1,4 +1,3 @@
-import './styles/App.css'
 import ChatBot from "./components/chatbot/ChatBot.tsx";
 
 function App() {
