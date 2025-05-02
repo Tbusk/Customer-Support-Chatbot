@@ -7,6 +7,9 @@ html, body {
     overflow: hidden;
 }
 
+/* Reset styles for all child elements of elements with the 'markdown' class.
+** This is to permit markdown to render and remove tailwindcss overriding it.  '
+*/
 .markdown > * {
     all: revert;
 }
