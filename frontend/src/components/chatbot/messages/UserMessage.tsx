@@ -11,8 +11,10 @@ export interface ChatbotUserMessageProps {
 export default function UserMessage(props: ChatbotUserMessageProps) {
     return (
         <div key={props.propKey} className="content-start flex flex-col items-end px-3">
-            <div className="bg-stone-800 p-3 rounded-lg mb-2 text-sm text-gray-300 border border-r-8 border-r-slate-300 border-slate-500">
-                <ReactMarkdown>{props.message.text}</ReactMarkdown>
+            <div className="bg-stone-800 px-3 rounded-lg mb-2 text-sm text-gray-300 border border-r-8 border-r-slate-300 border-slate-500">
+                <div className="markdown">
+                    <ReactMarkdown>{props.message.text}</ReactMarkdown>
+                </div>
             </div>
             <Text className="text-gray-400 mt-0 mb-2" style={{fontSize:'11px'}}>
                 {props.message.timestamp.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})} | {props.message.sender}

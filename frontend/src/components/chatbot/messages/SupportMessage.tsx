@@ -11,8 +11,12 @@ export interface ChatbotSupportMessageProps {
 export default function SupportMessage(props: ChatbotSupportMessageProps) {
     return (
         <div key={props.propKey} className="content-start flex flex-col items-start px-3">
-            <div className="bg-stone-800 p-3 rounded-lg mb-2 text-sm text-gray-200 border border-slate-500 border-l-slate-400 border-l-8">
-                <ReactMarkdown>{props.message.text}</ReactMarkdown>
+            <div className="bg-stone-800 px-3 rounded-lg mb-2 text-sm text-gray-200 border border-slate-500 border-l-slate-400 border-l-8">
+                <div className="flex flex-wrap text-wrap break-words">
+                    <div className="markdown">
+                        <ReactMarkdown children={props.message.text} />
+                    </div>
+                </div>
             </div>
             <Text className="text-gray-400  mt-0 mb-2" style={{fontSize:'11px'}}>
                 {props.message.timestamp.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})} | {props.message.sender}
