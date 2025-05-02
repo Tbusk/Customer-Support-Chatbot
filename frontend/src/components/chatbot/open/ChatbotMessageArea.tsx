@@ -23,7 +23,7 @@ export default function ChatbotMessageArea(props: ChatbotMessageAreaProps) {
                 <DefaultSupportMessage propKey={0}/>
 
                 {props.messages.map((message, index) => (
-                    message.sender === 'support' ? (
+                    message.sender === 'Support' ? (
                         <SupportMessage propKey={index + 1} message={message} />
                     ) : (
                         <UserMessage propKey={index + 1} message={message} />
