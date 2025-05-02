@@ -9,7 +9,7 @@ export interface DefaultSupportMessageProps {
 export default function DefaultSupportMessage(props: DefaultSupportMessageProps) {
 
     const supportMessage:string = 'How can we assist you today?';
-    const sender: string = 'support';
+    const sender: string = 'Support';
     const timestamp: Date = new Date();
 
     const message:Message = {text: supportMessage, sender: sender, timestamp: timestamp};
