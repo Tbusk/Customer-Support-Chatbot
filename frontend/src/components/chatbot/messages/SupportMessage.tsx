@@ -15,7 +15,7 @@ export default function SupportMessage(props: ChatbotSupportMessageProps) {
                 <ReactMarkdown>{props.message.text}</ReactMarkdown>
             </div>
             <Text className="text-gray-400  mt-0 mb-2" style={{fontSize:'11px'}}>
-                {props.message.timestamp.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})}
+                {props.message.timestamp.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})} | {props.message.sender}
             </Text>
         </div>
     );
