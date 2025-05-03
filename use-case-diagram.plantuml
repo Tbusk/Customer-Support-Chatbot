@@ -1,0 +1,43 @@
+@startuml
+actor "Customer" as CUSTOMER
+actor "Support Admin" as ADMIN
+
+rectangle "Automated Customer Support Chatbot System" {
+  usecase "Ask Support Question" as ASK
+  usecase "Receive Answer" as RECEIVE
+  usecase "Configure Chatbot" as CONFIGURE_CHATBOT
+  usecase "Add Company Information" as ADD_INFO
+  usecase "Add Response Templates" as ADD_TEMPLATE
+  usecase "Update Response Templates" as UPDATE_TEMPLATE
+  usecase "Add Additional Websites" as ADD_WEBSITES
+
+
+  usecase "Search Document" as SEARCH_DOC
+  usecase "Search Company Website" as SEARCH_WEB
+  usecase "Search Additional Websites" as SEARCH_ADD
+  usecase "Provide Not Found Response" as NOT_FOUND
+
+  usecase "Provide Out of Topic Response" as OUT_TOPIC
+  usecase "Provide Escalation Required Response" as ESCALATE
+  usecase "Provide Clarification Needed Response" as CLARIFY
+}
+
+CUSTOMER--> ASK
+CUSTOMER--> RECEIVE
+
+ADMIN --> CONFIGURE_CHATBOT
+
+CONFIGURE_CHATBOT ..> ADD_INFO : <<include>>
+CONFIGURE_CHATBOT ..> ADD_TEMPLATE : <<include>>
+CONFIGURE_CHATBOT ..> UPDATE_TEMPLATE: <<include>>
+CONFIGURE_CHATBOT ..> ADD_WEBSITES: <<include>>
+
+ASK ..> SEARCH_DOC : <<include>>
+SEARCH_DOC ..> SEARCH_WEB : <<extend>>
+SEARCH_WEB ..> SEARCH_ADD : <<extend>>
+SEARCH_ADD ..> NOT_FOUND : <<extend>>
+
+ASK ..> OUT_TOPIC : <<extend>>
+ASK ..> ESCALATE : <<extend>>
+ASK ..> CLARIFY : <<extend>>
+@enduml
