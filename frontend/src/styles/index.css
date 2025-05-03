@@ -13,3 +13,9 @@ html, body {
 .markdown > * {
     all: revert;
 }
+
+a {
+    text-decoration: underline;
+    font-style: italic;
+    color: lightgrey;
+}
