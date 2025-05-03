@@ -33,7 +33,7 @@ export default function ChatbotMessageArea(props: ChatbotMessageAreaProps) {
 
 
     return (
-        <div className="flex-grow overflow-y-auto bg-zinc-700 border-t border-b border-slate-600 ">
+        <div className="overflow-y-auto bg-zinc-700 border-t border-b border-slate-600 h-full">
             <div className="pt-3">
 
                 {/* Default support message displayed at the top */}

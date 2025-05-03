@@ -24,9 +24,9 @@ export interface SupportMessageProps {
  */
 export default function SupportMessage(props: SupportMessageProps) {
     return (
-        <div key={props.propKey} className="content-start flex flex-col items-start px-3">
+        <div key={props.propKey} className="content-start items-start px-3 py-2 flex flex-col">
             <div className="bg-stone-800 px-3 rounded-lg mb-2 text-sm text-gray-200 border border-slate-500 border-l-slate-400 border-l-8">
-                <div className="flex flex-wrap text-wrap break-words">
+                <div className="text-wrap break-words min-w-0">
 
                     {/* class markdown is needed so tailwindcss doesn't remove styling */}
                     <div className="markdown">
@@ -35,7 +35,7 @@ export default function SupportMessage(props: SupportMessageProps) {
                     </div>
                 </div>
             </div>
-            <Text className="text-gray-400  mt-0 mb-2" style={{fontSize:'11px'}}>
+            <Text className="text-gray-400  mt-0" style={{fontSize:'11px'}}>
 
                 {/* Display the timestamp and sender of the message in the form of `00:00 [AM/PM] | [Sender]`*/}
                 {props.message.timestamp.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})} | {props.message.sender}

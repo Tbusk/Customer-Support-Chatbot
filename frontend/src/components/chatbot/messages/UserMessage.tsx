@@ -24,7 +24,7 @@ export interface UserMessageProps {
  */
 export default function UserMessage(props: UserMessageProps) {
     return (
-        <div key={props.propKey} className="content-start flex flex-col items-end px-3">
+        <div key={props.propKey} className="content-start flex flex-col items-end px-3 py-2">
             <div className="bg-stone-800 px-3 rounded-lg mb-2 text-sm text-gray-300 border border-r-8 border-r-slate-300 border-slate-500">
                 {/* class markdown is needed so tailwindcss doesn't remove styling */}
                 <div className="markdown">
@@ -34,7 +34,7 @@ export default function UserMessage(props: UserMessageProps) {
                 </div>
             </div>
 
-            <Text className="text-gray-400 mt-0 mb-2" style={{fontSize:'11px'}}>
+            <Text className="text-gray-400 mt-2" style={{fontSize:'11px'}}>
                 {/* Display the timestamp and sender of the message in the form of `00:00 [AM/PM] | [Sender]`*/}
                 {props.message.timestamp.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})} | {props.message.sender}
             </Text>

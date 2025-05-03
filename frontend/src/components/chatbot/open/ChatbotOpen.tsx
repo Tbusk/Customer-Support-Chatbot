@@ -30,7 +30,7 @@ export default function ChatbotOpen(props: ChatbotOpenProps) {
 
     return (
         <div className="sm:pr-3 sm:pb-8">
-            <div className="flex flex-col h-screen w-screen sm:w-80 sm:h-120 bg-stone-800 sm:rounded-2xl">
+            <div className="flex flex-col w-screen h-screen sm:w-80 sm:h-120 bg-stone-800 sm:rounded-2xl " >
 
                 {/* Header section of the chatbot */}
                 <ChatbotOpenHeader setIsOpen={props.setIsOpen} isOpen={props.isOpen} />
