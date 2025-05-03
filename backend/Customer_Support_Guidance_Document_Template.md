@@ -35,5 +35,5 @@ They will be able to assist you further.
   If you have questions about our services or need help, I can help with that. If you believe this is in error, please reach out to our support team via email at `{companySupportEmail}` or call us at `{companySupportPhone}`.
 
 ### Unable to Find Response
-- Sorry, I couldn't find the information you requested.
-Please reach out to one of our dedicated support agents for assistance at `{companySupportEmail}` or `{companySupportPhone}`.
+- Sorry, I couldn't find the information you requested. If you need this information, please reach out to one of our dedicated support agents for assistance at `{companySupportEmail}` or `{companySupportPhone}`.
+  If you have any other questions, feel free to ask, and I'll do my best to help you.
