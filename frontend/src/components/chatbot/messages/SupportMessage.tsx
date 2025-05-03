@@ -2,6 +2,7 @@ import {Text} from "@radix-ui/themes";
 import {Message} from "../ChatBot.tsx";
 import ReactMarkdown from "react-markdown";
 import * as React from "react";
+import remarkGfm from 'remark-gfm';
 
 /**
  * Properties for the SupportMessage component.
@@ -30,7 +31,7 @@ export default function SupportMessage(props: SupportMessageProps) {
                     {/* class markdown is needed so tailwindcss doesn't remove styling */}
                     <div className="markdown">
                         {/* Render the message text using ReactMarkdown from `react-markdown` library for Markdown support */}
-                        <ReactMarkdown children={props.message.text} />
+                        <ReactMarkdown remarkPlugins={[remarkGfm]} children={props.message.text} />
                     </div>
                 </div>
             </div>

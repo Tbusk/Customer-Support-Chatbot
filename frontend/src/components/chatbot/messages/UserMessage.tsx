@@ -2,6 +2,7 @@ import ReactMarkdown from "react-markdown";
 import {Text} from "@radix-ui/themes";
 import {Message} from "../ChatBot.tsx";
 import * as React from "react";
+import remarkGfm from "remark-gfm";
 
 /**
  * Properties for the UserMessage component.
@@ -29,7 +30,7 @@ export default function UserMessage(props: UserMessageProps) {
                 <div className="markdown">
 
                     {/* Render the message text using ReactMarkdown from `react-markdown` library for Markdown support */}
-                    <ReactMarkdown>{props.message.text}</ReactMarkdown>
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>{props.message.text}</ReactMarkdown>
                 </div>
             </div>
 
