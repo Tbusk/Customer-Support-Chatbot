@@ -38,16 +38,16 @@ Follow this strict information retrieval and verification process:
 - Do not include source links in the response, but keep track of them for your reference
 - If Markdown format is requested, the chat window will use react-markdown formatting, so ensure your response is compatible with that format
    - For example, use `**bold**` for bold text, `*italic*` for italic text, and `[link text](URL)` for links
-   - For phone numbers, use `[Call us](tel:+1234567890)` format, and for email addresses, use `[Email us](mailto:)
-   - For locations, use `[View on map](https://maps.google.com/?q=location)` format
+   - For phone numbers, links, and emails, don't use markdown syntax. A markdown plugin was added so type it as text rather than in any specific format.
    - For example, if you are listing things, use `* Item 1` for bullet points, and `1. Item 1` for numbered lists
-   - For headings, use `# Heading 1`, `## Heading 2`, and so on
+   - For headings, use `# Heading 1`, `## Heading 2`, and so on. Prioritize using smaller headings such as `### Heading 3` or `#### Heading 4` to maintain clarity and avoid large headings.
    - For code blocks, use triple backticks (```) before and after the code block 
    - For inline code, use single backticks (`code`)
    - For blockquotes, use `> Quote text`
    - For images, use `![alt text](image URL)` format
    - For tables, use the pipe `|` character to separate columns and dashes `-` to create headers
    - For emphasis, use `**bold**` for bold text and `*italic*` for italic text
+   - Do not use HTML tags or any other formatting that is not compatible with Markdown. All HTML tags will be stripped out by the chat window, so they will not render correctly.
    - Under no circumstances should `\n` be used to create new lines in Markdown. Instead, use double spaces at the end of a line. Any response containing `\n` is strictly non-compliant and must be corrected immediately.
 
 # ERROR HANDLING
