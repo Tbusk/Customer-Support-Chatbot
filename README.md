@@ -23,6 +23,20 @@ It leverages OpenAI's ChatGPT to provide intelligent, context-aware responses to
 - Spring AI OpenAI Integration
 - Spring Web with REST API endpoints
 
+### Screenshots
+#### Desktop
+<img width="1409" height="1064" alt="image" src="https://github.com/user-attachments/assets/92378f1c-b21b-4134-b765-4ec6ee711f13" />
+<img width="1410" height="1065" alt="image" src="https://github.com/user-attachments/assets/cca6c1d8-3bc9-4d76-9dcc-fd6d413c625a" />
+<img width="1396" height="1097" alt="image" src="https://github.com/user-attachments/assets/b3f2b636-5971-49e8-a6fc-1d5b6e21900f" />
+
+
+#### Mobile
+<img width="448" height="801" alt="image" src="https://github.com/user-attachments/assets/bb221ab5-ce61-4691-b407-587cd5da426d" />
+<img width="451" height="802" alt="image" src="https://github.com/user-attachments/assets/585c07a8-997a-41f5-a657-220c91bb7466" />
+<img width="470" height="908" alt="image" src="https://github.com/user-attachments/assets/8bb798a9-d64b-43e4-8983-042cf402fd32" />
+
+
+
 ### Getting Started
 
 #### Prerequisites
